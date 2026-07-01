@@ -1,5 +1,7 @@
 # Google Search Console MCP Server
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) &nbsp; **100% free & open-source**
+
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that connects **Google Search Console** to any MCP-compatible AI client — [Claude](https://claude.ai), [Cursor](https://cursor.com), [Windsurf](https://windsurf.com), [Cline](https://cline.bot), [VS Code](https://code.visualstudio.com), ChatGPT, and more. **43 tools** for search analytics, indexing, and technical SEO, powered by natural language.
 
 Ask *"which queries lost clicks last month?"* or *"find keyword cannibalization on my blog"* and get answers straight from your GSC data — no dashboards, no exports.
