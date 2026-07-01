@@ -1,12 +1,13 @@
 # Google Search Console MCP Server
 
-A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that connects **Google Search Console** to [Claude](https://claude.ai) and any MCP-compatible AI client — **43 tools** for search analytics, indexing, and technical SEO, powered by natural language.
+A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that connects **Google Search Console** to any MCP-compatible AI client — [Claude](https://claude.ai), [Cursor](https://cursor.com), [Windsurf](https://windsurf.com), [Cline](https://cline.bot), [VS Code](https://code.visualstudio.com), ChatGPT, and more. **43 tools** for search analytics, indexing, and technical SEO, powered by natural language.
 
 Ask *"which queries lost clicks last month?"* or *"find keyword cannibalization on my blog"* and get answers straight from your GSC data — no dashboards, no exports.
 
 ## Features
 
 - **43 tools** over the `webmasters.readonly` scope
+- Works with **any MCP client** (Claude, Cursor, Windsurf, Cline, VS Code, ChatGPT, …)
 - Search analytics — clicks, impressions, CTR, average position by query / page / country / device
 - URL inspection & indexing status
 - Sitemap management
@@ -16,17 +17,23 @@ Ask *"which queries lost clicks last month?"* or *"find keyword cannibalization 
 
 ## Quick Start
 
-### Use as a Claude Connector (no install)
+### Option A — Hosted connector (no install)
 
-1. Open [claude.ai/settings/connectors](https://claude.ai/settings/connectors)
-2. Click **Add custom connector**
-3. Enter: `https://saveyourclicks.com/mcp/gsc`
-4. Claude handles Google sign-in automatically via OAuth 2.0.
+Add this remote MCP URL as a custom connector in any client that supports remote MCP + OAuth:
 
-### Self-host
+```
+https://saveyourclicks.com/mcp/gsc
+```
+
+- **Claude** — [claude.ai/settings/connectors](https://claude.ai/settings/connectors) → *Add custom connector*
+- **Cursor / Windsurf / Cline / VS Code** — add it as an MCP server URL in your client's MCP settings
+
+The server handles Google sign-in automatically via OAuth 2.0.
+
+### Option B — Self-host
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/google-search-console-mcp.git
+git clone https://github.com/yusofansari/google-search-console-mcp.git
 cd google-search-console-mcp
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -60,4 +67,4 @@ The server uses [FastMCP](https://github.com/modelcontextprotocol) with a custom
 
 ---
 
-*Keywords: Google Search Console MCP, GSC MCP server, Claude MCP, Model Context Protocol, SEO automation, Search Console API, AI SEO tools.*
+*Keywords: Google Search Console MCP, GSC MCP server, Claude MCP, Cursor MCP, Model Context Protocol, SEO automation, Search Console API, AI SEO tools.*
